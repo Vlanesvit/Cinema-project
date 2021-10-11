@@ -17,48 +17,152 @@
 </head>
 
 <body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content _container">
+        <div class="header__content__logo">
+          <a href="/">
+            <img src="./img/header/logo.svg" alt="Logo">
+          </a>
+        </div>
 
-  <header class="header">
-    <div class="header__content _container">
-      <div class="header__content__logo">
-        <a href="/">
-          <img src="./img/header/logo.svg" alt="Logo">
-        </a>
+        <div class="header__content__nav">
+          <nav class="nav">
+            <ul class="nav-menu">
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Главная</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Фильмы</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Кинотеатры</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">События</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Поддержка</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__content__user">
+          <span>Привет, Влад</span>
+          <img src="./img/header/ava.jpg" alt="Avatar">
+        </div>
       </div>
+    </header>
 
-      <div class="header__content__nav">
-        <nav class="nav">
-          <ul class="nav-menu">
-            <li class="nav-menu__item">
-              <a href="#" class="nav-menu__link">Главная</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#" class="nav-menu__link">Фильмы</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#" class="nav-menu__link">Кинотеатры</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#" class="nav-menu__link">События</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#" class="nav-menu__link">Поддержка</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <main class="page">
+      <section class="film">
+        <div class="film__content _container">
+          <div class="film__content-info">
+            <small class="film-subtitle">Avengers: Infinity War</small>
+            <h1 class="film-title">Мстители: война бесконечности</h1>
+            <p class="film-description">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с
+              которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический
+              тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью
+              которых
+              можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту –
+              судьба Земли никогда ещё не была столь неопределённой.
+            </p>
 
-      <div class="header__content__user">
-        <span>Привет, Влад</span>
-        <img src="./img/header/ava.jpg" alt="Avatar">
-      </div>
-    </div>
-  </header>
+            <div class="film-details">
+              <div class="film-details__time">
+                <img src="./img/main/clock.svg" alt="Clock">
+                <span class="time-counter">240 мин.</span>
+              </div>
 
-  <main class="page">
+              <div class="film-details__rating">
+                <img src="./img/main/imdb.png" alt="IMDB">
+                <span class="rating-counter">
+                  <strong class="rating-current">9.2</strong> / 10
+                </span>
+              </div>
+            </div>
+          </div>
 
-  </main>
+          <div class="film__content-link">
+            <a href="#">
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50" fill="white" />
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z"
+                    fill="#F20D01" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
 
+      <section class="session">
+        <div class="session__content _container">
+          <div class="session__content__date">
+            <div class="session-label">
+              <span>Дата</span>
+            </div>
+            <div class="session-date-block">
+              <div class="session-date-block__item">
+                <span class="session-month">Окт</span>
+                <span class="session-day">08</span>
+                <span class="session-week">пт</span>
+              </div>
+              <div class="session-date-block__item">
+                <span class="session-month">Окт</span>
+                <span class="session-day">09</span>
+                <span class="session-week">сб</span>
+              </div>
+              <div class="session-date-block__item">
+                <span class="session-month">Окт</span>
+                <span class="session-day">10</span>
+                <span class="session-week">вс</span>
+              </div>
+              <div class="session-date-block__item">
+                <span class="session-month">Окт</span>
+                <span class="session-day">11</span>
+                <span class="session-week">пн</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="session__content__cinema">
+            <div class="session-label">
+              <span>Кинотеарт</span>
+            </div>
+            <div class="session-cimena-select">
+              <select class="select my-input" name="cinema">
+                <option value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option>
+                <option value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option>
+                <option value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="session__content__time">
+            <div class="session-label">
+              <span>Время</span>
+            </div>
+            <div class="session-time-select">
+              <select class="select my-input" name="time">
+                <option value="23:00">23:00</option>
+                <option value="23:00">23:00</option>
+                <option value="23:00">23:00</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
 </body>
 

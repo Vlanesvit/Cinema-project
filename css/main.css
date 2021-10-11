@@ -72,8 +72,6 @@ ul {
   background-image: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  min-width: 100vw;
 }
 
 /* header */
@@ -204,13 +202,10 @@ ul {
 }
 
 /* session */
-.session {
+.session__content {
   padding: 49px 0 64px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.session__content {
   display: flex;
   justify-content: space-between;
 }
@@ -302,4 +297,103 @@ ul {
 
 .session-time-select {
   width: 108px;
+}
+
+/* scheme */
+.scheme {
+  padding: 60px 0;
+}
+
+.scheme__content {
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+}
+
+.scheme path:not(.light) {
+  fill: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+  fill: rgba(255, 255, 255, 0.5)
+}
+
+.scheme path.free,
+.scheme path.free:hover {
+  fill: rgba(255, 255, 255, 0.2);
+  cursor: default;
+}
+
+.scheme path._active,
+.scheme path._active:hover {
+  fill: #FE8E05;
+  cursor: pointer;
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+  fill: #FE8E05;
+  cursor: default;
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: default;
+}
+
+.legend {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 22px 0 38px 0px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.legend svg {
+  margin-right: 15px;
+}
+
+.legend-label {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.legend-label:last-child {
+  margin-right: 0px;
+}
+
+/* price */
+.price__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-label {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.price-tag {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 61px;
+}
+
+.button {
+  background: #FE8E05;
+  border-radius: 5px;
+  padding: 24px 52px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
 }

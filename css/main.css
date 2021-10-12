@@ -85,9 +85,22 @@ ul {
   margin-left: 57px;
 }
 
+.nav {
+  position: relative;
+}
+
+.nav-menu._show {
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger-menu {
+  display: none;
+}
+
 .nav-menu {
   display: flex;
-  align-items: center;
 }
 
 .nav-menu__item {
@@ -127,7 +140,7 @@ ul {
 
 /* film */
 .film {
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .film__content {
@@ -309,6 +322,10 @@ ul {
   border-radius: 10px;
 }
 
+.scheme-svg {
+  max-width: 1170px;
+}
+
 .scheme path:not(.light) {
   fill: rgba(255, 255, 255, 0.2);
   cursor: pointer;
@@ -344,6 +361,7 @@ ul {
 
 .legend {
   max-width: 1024px;
+  width: 90%;
   margin: 0 auto;
   padding: 22px 0 38px 0px;
   display: flex;
@@ -367,6 +385,10 @@ ul {
 }
 
 /* price */
+.price {
+  padding: 0 0 60px;
+}
+
 .price__content {
   display: flex;
   align-items: center;
@@ -396,4 +418,91 @@ ul {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
+}
+
+@media (max-width: 1200px) {
+  ._container {
+    max-width: 960px;
+  }
+
+  .session-cimena-select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  ._container {
+    max-width: 750px;
+  }
+
+  .session__content {
+    flex-wrap: wrap;
+  }
+
+  .session__content__date {
+    flex-basis: 70%;
+    margin-bottom: 40px;
+  }
+
+  .session__content__time {
+    order: 0;
+  }
+
+  .session__content__cinema {
+    order: 3;
+  }
+
+  .nav-menu__item {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  ._container {
+    max-width: 560px;
+    width: 90%;
+  }
+
+  .nav-menu {
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    margin-left: 15px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: #621402;
+    z-index: 9;
+    border-radius: 10px;
+  }
+
+  .nav-menu__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+
+
+  .burger-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+  }
+
+  .header__content__nav {
+    margin-left: 30px;
+  }
+
+  .film__content {
+    flex-direction: column;
+  }
+
+  .film__content-link {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
